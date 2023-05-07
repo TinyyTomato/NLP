@@ -1,0 +1,263 @@
+C:\Users\Lenovo\.conda\envs\ObjectDetection\python.exe C:/Users/Lenovo/PycharmProjects/hdu_ml/My_Bert/Bert.py
+2022-05-22 14:56:05,359 INFO: Use cuda: False, gpu id: 0.
+2022-05-22 14:56:11,671 INFO: Fold lens [1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000]
+2022-05-22 14:56:13.714226: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-05-22 14:56:13.714511: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-05-22 14:56:19,647 INFO: Build vocab: words 4337, labels 14.
+2022-05-22 14:56:19,684 INFO: Build Bert vocab with size 5981.
+Some weights of the model checkpoint at ./bert/bert-mini/ were not used when initializing BertModel: ['cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+2022-05-22 14:56:19,742 INFO: Build Bert encoder with pooled False.
+2022-05-22 14:56:19,759 INFO: Build model with bert word encoder, lstm sent encoder.
+2022-05-22 14:56:19,760 INFO: Model param num: 7.72 M.
+2022-05-22 14:57:05,864 INFO: Total 9000 docs.
+2022-05-22 14:57:10,895 INFO: Total 1000 docs.
+2022-05-22 15:01:33,291 INFO: Total 50000 docs.
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\transformers\optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+2022-05-22 15:01:33,300 INFO: Start training...
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 15:04:20,917 INFO: | epoch   1 | step  50 | batch  50/563 | lr 0.00020 0.00005 | loss 2.0437 | s/batch 3.35
+2022-05-22 15:06:59,334 INFO: | epoch   1 | step 100 | batch 100/563 | lr 0.00020 0.00005 | loss 1.2629 | s/batch 3.17
+2022-05-22 15:09:33,490 INFO: | epoch   1 | step 150 | batch 150/563 | lr 0.00020 0.00005 | loss 0.8570 | s/batch 3.08
+2022-05-22 15:11:55,105 INFO: | epoch   1 | step 200 | batch 200/563 | lr 0.00020 0.00005 | loss 0.8087 | s/batch 2.83
+2022-05-22 15:14:32,333 INFO: | epoch   1 | step 250 | batch 250/563 | lr 0.00020 0.00005 | loss 0.7220 | s/batch 3.14
+2022-05-22 15:16:56,761 INFO: | epoch   1 | step 300 | batch 300/563 | lr 0.00020 0.00004 | loss 0.7477 | s/batch 2.89
+2022-05-22 15:19:37,484 INFO: | epoch   1 | step 350 | batch 350/563 | lr 0.00020 0.00004 | loss 0.4536 | s/batch 3.21
+2022-05-22 15:22:18,497 INFO: | epoch   1 | step 400 | batch 400/563 | lr 0.00020 0.00004 | loss 0.6980 | s/batch 3.22
+2022-05-22 15:24:51,107 INFO: | epoch   1 | step 450 | batch 450/563 | lr 0.00020 0.00004 | loss 0.5102 | s/batch 3.05
+2022-05-22 15:27:01,511 INFO: | epoch   1 | step 500 | batch 500/563 | lr 0.00020 0.00004 | loss 0.4376 | s/batch 2.61
+2022-05-22 15:29:27,305 INFO: | epoch   1 | step 550 | batch 550/563 | lr 0.00020 0.00004 | loss 0.4866 | s/batch 2.92
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+2022-05-22 15:29:57,903 INFO: | epoch   1 | score (69.28, 58.42, 61.88) | f1 61.88 | loss 0.8098 | time 1704.58
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+2022-05-22 15:31:55,563 INFO: | epoch   1 | dev | score (77.28, 71.87, 72.46) | f1 72.46 | time 117.66
+2022-05-22 15:31:55,563 INFO: Exceed history dev = 0.00, current dev = 72.46
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 15:34:00,679 INFO: | epoch   2 | step 613 | batch  50/563 | lr 0.00020 0.00004 | loss 0.4052 | s/batch 2.50
+2022-05-22 15:36:20,765 INFO: | epoch   2 | step 663 | batch 100/563 | lr 0.00020 0.00004 | loss 0.3822 | s/batch 2.80
+2022-05-22 15:39:04,913 INFO: | epoch   2 | step 713 | batch 150/563 | lr 0.00020 0.00004 | loss 0.3561 | s/batch 3.28
+2022-05-22 15:41:34,040 INFO: | epoch   2 | step 763 | batch 200/563 | lr 0.00020 0.00004 | loss 0.3636 | s/batch 2.98
+2022-05-22 15:43:44,879 INFO: | epoch   2 | step 813 | batch 250/563 | lr 0.00020 0.00004 | loss 0.3961 | s/batch 2.62
+2022-05-22 15:46:06,976 INFO: | epoch   2 | step 863 | batch 300/563 | lr 0.00020 0.00003 | loss 0.3354 | s/batch 2.84
+2022-05-22 15:48:15,637 INFO: | epoch   2 | step 913 | batch 350/563 | lr 0.00020 0.00003 | loss 0.3227 | s/batch 2.57
+2022-05-22 15:50:28,141 INFO: | epoch   2 | step 963 | batch 400/563 | lr 0.00020 0.00003 | loss 0.4208 | s/batch 2.65
+2022-05-22 15:52:42,789 INFO: | epoch   2 | step 1013 | batch 450/563 | lr 0.00015 0.00003 | loss 0.3830 | s/batch 2.69
+2022-05-22 15:55:04,261 INFO: | epoch   2 | step 1063 | batch 500/563 | lr 0.00015 0.00003 | loss 0.3286 | s/batch 2.83
+2022-05-22 15:57:08,864 INFO: | epoch   2 | step 1113 | batch 550/563 | lr 0.00015 0.00003 | loss 0.2869 | s/batch 2.49
+2022-05-22 15:57:42,105 INFO: | epoch   2 | score (86.27, 81.06, 82.15) | f1 82.15 | loss 0.3594 | time 1546.47
+2022-05-22 15:57:42,123 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9168    0.9222    0.9195      1697
+          股票     0.8995    0.9274    0.9132      1680
+          体育     0.9723    0.9758    0.9741      1405
+          娱乐     0.9113    0.9413    0.9260       971
+          时政     0.8722    0.8746    0.8734       710
+          社会     0.8381    0.8441    0.8411       558
+          教育     0.9174    0.9033    0.9103       455
+          财经     0.8185    0.6927    0.7504       384
+          家居     0.8468    0.8717    0.8590       374
+          游戏     0.8741    0.8459    0.8597       279
+          房产     0.8261    0.7844    0.8047       218
+          时尚     0.7834    0.8311    0.8066       148
+          彩票     0.8514    0.7875    0.8182        80
+          星座     0.7500    0.1463    0.2449        41
+
+    accuracy                         0.9002      9000
+   macro avg     0.8627    0.8106    0.8215      9000
+weighted avg     0.8991    0.9002    0.8984      9000
+
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+2022-05-22 15:59:37,750 INFO: | epoch   2 | dev | score (80.53, 78.06, 78.3) | f1 78.3 | time 115.63
+2022-05-22 15:59:37,750 INFO: Exceed history dev = 72.46, current dev = 78.30
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 16:01:57,059 INFO: | epoch   3 | step 1176 | batch  50/563 | lr 0.00015 0.00003 | loss 0.2097 | s/batch 2.79
+2022-05-22 16:04:21,579 INFO: | epoch   3 | step 1226 | batch 100/563 | lr 0.00015 0.00003 | loss 0.2652 | s/batch 2.89
+2022-05-22 16:06:49,732 INFO: | epoch   3 | step 1276 | batch 150/563 | lr 0.00015 0.00003 | loss 0.2685 | s/batch 2.96
+2022-05-22 16:09:13,237 INFO: | epoch   3 | step 1326 | batch 200/563 | lr 0.00015 0.00003 | loss 0.2709 | s/batch 2.87
+2022-05-22 16:11:54,111 INFO: | epoch   3 | step 1376 | batch 250/563 | lr 0.00015 0.00003 | loss 0.2875 | s/batch 3.22
+2022-05-22 16:14:21,853 INFO: | epoch   3 | step 1426 | batch 300/563 | lr 0.00015 0.00002 | loss 0.2885 | s/batch 2.95
+2022-05-22 16:16:50,745 INFO: | epoch   3 | step 1476 | batch 350/563 | lr 0.00015 0.00002 | loss 0.3225 | s/batch 2.98
+2022-05-22 16:18:56,171 INFO: | epoch   3 | step 1526 | batch 400/563 | lr 0.00015 0.00002 | loss 0.2559 | s/batch 2.51
+2022-05-22 16:21:24,236 INFO: | epoch   3 | step 1576 | batch 450/563 | lr 0.00015 0.00002 | loss 0.2192 | s/batch 2.96
+2022-05-22 16:23:43,005 INFO: | epoch   3 | step 1626 | batch 500/563 | lr 0.00015 0.00002 | loss 0.2534 | s/batch 2.78
+2022-05-22 16:25:57,095 INFO: | epoch   3 | step 1676 | batch 550/563 | lr 0.00015 0.00002 | loss 0.1679 | s/batch 2.68
+2022-05-22 16:26:37,235 INFO: | epoch   3 | score (89.95, 87.87, 88.78) | f1 88.78 | loss 0.2553 | time 1619.43
+2022-05-22 16:26:37,257 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9343    0.9387    0.9365      1697
+          股票     0.9225    0.9423    0.9323      1680
+          体育     0.9829    0.9822    0.9826      1405
+          娱乐     0.9358    0.9464    0.9411       971
+          时政     0.9078    0.9155    0.9116       710
+          社会     0.8624    0.8763    0.8693       558
+          教育     0.9319    0.9319    0.9319       455
+          财经     0.8504    0.7552    0.8000       384
+          家居     0.9113    0.9064    0.9088       374
+          游戏     0.9104    0.8746    0.8921       279
+          房产     0.8810    0.8486    0.8645       218
+          时尚     0.8526    0.8986    0.8750       148
+          彩票     0.9351    0.9000    0.9172        80
+          星座     0.7742    0.5854    0.6667        41
+
+    accuracy                         0.9250      9000
+   macro avg     0.8995    0.8787    0.8878      9000
+weighted avg     0.9246    0.9250    0.9245      9000
+
+2022-05-22 16:28:36,500 INFO: | epoch   3 | dev | score (88.21, 84.15, 85.23) | f1 85.23 | time 119.24
+2022-05-22 16:28:36,504 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9189    0.9043    0.9115       188
+          股票     0.9412    0.9462    0.9437       186
+          体育     0.9871    0.9808    0.9839       156
+          娱乐     0.9259    0.9346    0.9302       107
+          时政     0.9079    0.8846    0.8961        78
+          社会     0.8519    0.7541    0.8000        61
+          教育     0.9020    0.9200    0.9109        50
+          财经     0.8378    0.7381    0.7848        42
+          家居     0.6724    0.9512    0.7879        41
+          游戏     0.7714    0.8710    0.8182        31
+          房产     0.7333    0.9167    0.8148        24
+          时尚     0.9000    0.5625    0.6923        16
+          彩票     1.0000    0.7500    0.8571         8
+          星座     1.0000    0.6667    0.8000        12
+
+    accuracy                         0.9020      1000
+   macro avg     0.8821    0.8415    0.8523      1000
+weighted avg     0.9074    0.9020    0.9019      1000
+
+2022-05-22 16:28:36,504 INFO: Exceed history dev = 78.30, current dev = 85.23
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 16:30:51,268 INFO: | epoch   4 | step 1739 | batch  50/563 | lr 0.00015 0.00002 | loss 0.2059 | s/batch 2.69
+2022-05-22 16:33:12,362 INFO: | epoch   4 | step 1789 | batch 100/563 | lr 0.00015 0.00002 | loss 0.2360 | s/batch 2.82
+2022-05-22 16:35:47,330 INFO: | epoch   4 | step 1839 | batch 150/563 | lr 0.00015 0.00002 | loss 0.2074 | s/batch 3.10
+2022-05-22 16:38:13,551 INFO: | epoch   4 | step 1889 | batch 200/563 | lr 0.00015 0.00002 | loss 0.1905 | s/batch 2.92
+2022-05-22 16:40:35,357 INFO: | epoch   4 | step 1939 | batch 250/563 | lr 0.00015 0.00002 | loss 0.1995 | s/batch 2.84
+2022-05-22 16:42:50,984 INFO: | epoch   4 | step 1989 | batch 300/563 | lr 0.00015 0.00001 | loss 0.2212 | s/batch 2.71
+2022-05-22 16:44:57,783 INFO: | epoch   4 | step 2039 | batch 350/563 | lr 0.00011 0.00001 | loss 0.2225 | s/batch 2.54
+2022-05-22 16:47:21,327 INFO: | epoch   4 | step 2089 | batch 400/563 | lr 0.00011 0.00001 | loss 0.1938 | s/batch 2.87
+2022-05-22 16:49:39,053 INFO: | epoch   4 | step 2139 | batch 450/563 | lr 0.00011 0.00001 | loss 0.1656 | s/batch 2.75
+2022-05-22 16:51:52,999 INFO: | epoch   4 | step 2189 | batch 500/563 | lr 0.00011 0.00001 | loss 0.2122 | s/batch 2.68
+2022-05-22 16:54:11,850 INFO: | epoch   4 | step 2239 | batch 550/563 | lr 0.00011 0.00001 | loss 0.1589 | s/batch 2.78
+2022-05-22 16:54:42,727 INFO: | epoch   4 | score (91.76, 91.35, 91.54) | f1 91.54 | loss 0.1996 | time 1566.17
+2022-05-22 16:54:42,749 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9486    0.9470    0.9478      1697
+          股票     0.9390    0.9536    0.9462      1680
+          体育     0.9879    0.9851    0.9865      1405
+          娱乐     0.9522    0.9650    0.9586       971
+          时政     0.9096    0.9211    0.9153       710
+          社会     0.8932    0.8996    0.8964       558
+          教育     0.9571    0.9319    0.9443       455
+          财经     0.9031    0.8255    0.8626       384
+          家居     0.9173    0.9492    0.9330       374
+          游戏     0.9121    0.8925    0.9022       279
+          房产     0.8962    0.8716    0.8837       218
+          时尚     0.9306    0.9054    0.9178       148
+          彩票     0.8902    0.9125    0.9012        80
+          星座     0.8095    0.8293    0.8193        41
+
+    accuracy                         0.9402      9000
+   macro avg     0.9176    0.9135    0.9154      9000
+weighted avg     0.9402    0.9402    0.9401      9000
+
+2022-05-22 16:56:34,285 INFO: | epoch   4 | dev | score (91.66, 83.48, 86.51) | f1 86.51 | time 111.54
+2022-05-22 16:56:34,289 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9005    0.9628    0.9306       188
+          股票     0.9184    0.9677    0.9424       186
+          体育     0.9935    0.9808    0.9871       156
+          娱乐     0.9358    0.9533    0.9444       107
+          时政     0.8659    0.9103    0.8875        78
+          社会     0.8704    0.7705    0.8174        61
+          教育     0.8519    0.9200    0.8846        50
+          财经     0.9643    0.6429    0.7714        42
+          家居     0.8537    0.8537    0.8537        41
+          游戏     0.9000    0.8710    0.8852        31
+          房产     0.7778    0.8750    0.8235        24
+          时尚     1.0000    0.6875    0.8148        16
+          彩票     1.0000    0.6250    0.7692         8
+          星座     1.0000    0.6667    0.8000        12
+
+    accuracy                         0.9140      1000
+   macro avg     0.9166    0.8348    0.8651      1000
+weighted avg     0.9165    0.9140    0.9120      1000
+
+2022-05-22 16:56:34,289 INFO: Exceed history dev = 85.23, current dev = 86.51
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 16:58:54,273 INFO: | epoch   5 | step 2302 | batch  50/563 | lr 0.00011 0.00001 | loss 0.1668 | s/batch 2.80
+2022-05-22 17:00:54,080 INFO: | epoch   5 | step 2352 | batch 100/563 | lr 0.00011 0.00001 | loss 0.1164 | s/batch 2.40
+2022-05-22 17:03:15,506 INFO: | epoch   5 | step 2402 | batch 150/563 | lr 0.00011 0.00001 | loss 0.1527 | s/batch 2.83
+2022-05-22 17:05:37,941 INFO: | epoch   5 | step 2452 | batch 200/563 | lr 0.00011 0.00001 | loss 0.1584 | s/batch 2.85
+2022-05-22 17:08:05,777 INFO: | epoch   5 | step 2502 | batch 250/563 | lr 0.00011 0.00001 | loss 0.1420 | s/batch 2.96
+2022-05-22 17:10:33,697 INFO: | epoch   5 | step 2552 | batch 300/563 | lr 0.00011 0.00000 | loss 0.1435 | s/batch 2.96
+2022-05-22 17:12:56,758 INFO: | epoch   5 | step 2602 | batch 350/563 | lr 0.00011 0.00000 | loss 0.1581 | s/batch 2.86
+2022-05-22 17:15:10,394 INFO: | epoch   5 | step 2652 | batch 400/563 | lr 0.00011 0.00000 | loss 0.1786 | s/batch 2.67
+2022-05-22 17:17:33,135 INFO: | epoch   5 | step 2702 | batch 450/563 | lr 0.00011 0.00000 | loss 0.1419 | s/batch 2.85
+2022-05-22 17:19:38,366 INFO: | epoch   5 | step 2752 | batch 500/563 | lr 0.00011 0.00000 | loss 0.1730 | s/batch 2.50
+2022-05-22 17:22:08,965 INFO: | epoch   5 | step 2802 | batch 550/563 | lr 0.00011 0.00000 | loss 0.2122 | s/batch 3.01
+2022-05-22 17:22:53,599 INFO: | epoch   5 | score (94.18, 93.58, 93.87) | f1 93.87 | loss 0.1569 | time 1579.25
+2022-05-22 17:22:53,617 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9645    0.9611    0.9628      1697
+          股票     0.9552    0.9655    0.9603      1680
+          体育     0.9900    0.9900    0.9900      1405
+          娱乐     0.9690    0.9660    0.9675       971
+          时政     0.9249    0.9366    0.9307       710
+          社会     0.9035    0.9229    0.9131       558
+          教育     0.9581    0.9538    0.9559       455
+          财经     0.9258    0.8776    0.9011       384
+          家居     0.9464    0.9439    0.9451       374
+          游戏     0.9319    0.9319    0.9319       279
+          房产     0.9292    0.9037    0.9163       218
+          时尚     0.9262    0.9324    0.9293       148
+          彩票     0.9375    0.9375    0.9375        80
+          星座     0.9231    0.8780    0.9000        41
+
+    accuracy                         0.9547      9000
+   macro avg     0.9418    0.9358    0.9387      9000
+weighted avg     0.9547    0.9547    0.9546      9000
+
+2022-05-22 17:24:53,819 INFO: | epoch   5 | dev | score (91.71, 87.17, 89.01) | f1 89.01 | time 120.20
+2022-05-22 17:24:53,824 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9137    0.9574    0.9351       188
+          股票     0.9330    0.9731    0.9526       186
+          体育     0.9935    0.9808    0.9871       156
+          娱乐     0.9346    0.9346    0.9346       107
+          时政     0.8780    0.9231    0.9000        78
+          社会     0.8500    0.8361    0.8430        61
+          教育     0.9020    0.9200    0.9109        50
+          财经     0.9355    0.6905    0.7945        42
+          家居     0.9429    0.8049    0.8684        41
+          游戏     0.9310    0.8710    0.9000        31
+          房产     0.7586    0.9167    0.8302        24
+          时尚     0.8667    0.8125    0.8387        16
+          彩票     1.0000    0.7500    0.8571         8
+          星座     1.0000    0.8333    0.9091        12
+
+    accuracy                         0.9230      1000
+   macro avg     0.9171    0.8717    0.8901      1000
+weighted avg     0.9246    0.9230    0.9221      1000
+
+2022-05-22 17:24:53,825 INFO: Exceed history dev = 86.51, current dev = 89.01
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Process finished with exit code 0

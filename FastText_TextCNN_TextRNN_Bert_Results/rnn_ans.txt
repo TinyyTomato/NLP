@@ -1,0 +1,836 @@
+C:\Users\Lenovo\.conda\envs\ObjectDetection\python.exe C:/Users/Lenovo/PycharmProjects/hdu_ml/My_Bert/TextRnn.py
+2022-05-21 23:40:48,948 INFO: Use cuda: False, gpu id: 0.
+2022-05-21 23:40:56,892 INFO: Fold lens [1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000]
+2022-05-21 23:40:59.690721: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-05-21 23:40:59.690884: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-05-21 23:41:07,713 INFO: Build vocab: words 4337, labels 14.
+2022-05-21 23:41:07,930 INFO: Load extword embed: words 5978, dims 100.
+2022-05-21 23:41:07,971 INFO: Build model with lstm word encoder, lstm sent encoder.
+2022-05-21 23:41:07,972 INFO: Model param num: 4.63 M.
+2022-05-21 23:42:09,633 INFO: Total 9000 docs.
+2022-05-21 23:42:15,980 INFO: Total 1000 docs.
+2022-05-21 23:47:32,059 INFO: Total 50000 docs.
+2022-05-21 23:47:32,059 INFO: Start training...
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-21 23:52:34,208 INFO: | epoch   1 | step 200 | batch 200/563 | lr 0.00020 | loss 1.9800 | s/batch 1.51
+2022-05-21 23:57:12,324 INFO: | epoch   1 | step 400 | batch 400/563 | lr 0.00020 | loss 1.3416 | s/batch 1.39
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+2022-05-22 00:00:35,898 INFO: | epoch   1 | score (35.99, 24.75, 23.0) | f1 23.0 | loss 1.5054 | time 783.82
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+2022-05-22 00:01:31,061 INFO: | epoch   1 | dev | score (39.5, 41.35, 39.21) | f1 39.21 | time 55.16
+2022-05-22 00:01:31,061 INFO: Exceed history dev = 0.00, current dev = 39.21
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 00:05:45,360 INFO: | epoch   2 | step 763 | batch 200/563 | lr 0.00020 | loss 0.9255 | s/batch 1.27
+2022-05-22 00:10:08,842 INFO: | epoch   2 | step 963 | batch 400/563 | lr 0.00020 | loss 0.8604 | s/batch 1.32
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+2022-05-22 00:13:45,248 INFO: | epoch   2 | score (56.05, 47.66, 47.66) | f1 47.66 | loss 0.8498 | time 734.15
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+2022-05-22 00:14:48,056 INFO: | epoch   2 | dev | score (64.15, 54.21, 54.21) | f1 54.21 | time 62.77
+2022-05-22 00:14:48,057 INFO: Exceed history dev = 39.21, current dev = 54.21
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 00:19:05,642 INFO: | epoch   3 | step 1326 | batch 200/563 | lr 0.00015 | loss 0.6831 | s/batch 1.29
+2022-05-22 00:23:29,470 INFO: | epoch   3 | step 1526 | batch 400/563 | lr 0.00015 | loss 0.6145 | s/batch 1.32
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+2022-05-22 00:27:09,171 INFO: | epoch   3 | score (65.29, 58.95, 60.37) | f1 60.37 | loss 0.6266 | time 741.08
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+2022-05-22 00:28:05,090 INFO: | epoch   3 | dev | score (68.92, 61.91, 62.15) | f1 62.15 | time 55.91
+2022-05-22 00:28:05,090 INFO: Exceed history dev = 54.21, current dev = 62.15
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 00:32:36,141 INFO: | epoch   4 | step 1889 | batch 200/563 | lr 0.00015 | loss 0.5551 | s/batch 1.36
+2022-05-22 00:36:49,231 INFO: | epoch   4 | step 2089 | batch 400/563 | lr 0.00011 | loss 0.4904 | s/batch 1.27
+	2022-05-22 00:40:08,659 INFO: | epoch   4 | score (72.0, 67.36, 68.97) | f1 68.97 | loss 0.5094 | time 723.54
+2022-05-22 00:40:08,681 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.8654    0.8939    0.8794      1697
+          股票     0.8406    0.9042    0.8712      1680
+          体育     0.9549    0.9651    0.9600      1405
+          娱乐     0.8626    0.9053    0.8834       971
+          时政     0.8126    0.8366    0.8244       710
+          社会     0.7378    0.7867    0.7615       558
+          教育     0.8634    0.8198    0.8410       455
+          财经     0.6810    0.4115    0.5130       384
+          家居     0.6825    0.7299    0.7054       374
+          游戏     0.7102    0.6237    0.6641       279
+          房产     0.7353    0.6881    0.7109       218
+          时尚     0.5897    0.4662    0.5208       148
+          彩票     0.7442    0.4000    0.5203        80
+          星座     0.0000    0.0000    0.0000        41
+
+    accuracy                         0.8370      9000
+   macro avg     0.7200    0.6736    0.6897      9000
+weighted avg     0.8293    0.8370    0.8306      9000
+
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+2022-05-22 00:41:05,392 INFO: | epoch   4 | dev | score (72.56, 65.51, 67.52) | f1 67.52 | time 56.71
+2022-05-22 00:41:05,392 INFO: Exceed history dev = 62.15, current dev = 67.52
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 00:45:19,418 INFO: | epoch   5 | step 2452 | batch 200/563 | lr 0.00011 | loss 0.4330 | s/batch 1.27
+2022-05-22 00:49:46,904 INFO: | epoch   5 | step 2652 | batch 400/563 | lr 0.00011 | loss 0.4061 | s/batch 1.34
+2022-05-22 00:53:08,552 INFO: | epoch   5 | score (75.84, 72.79, 74.0) | f1 74.0 | loss 0.4204 | time 723.13
+2022-05-22 00:53:08,567 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.8950    0.9039    0.8994      1697
+          股票     0.8724    0.9196    0.8954      1680
+          体育     0.9625    0.9687    0.9656      1405
+          娱乐     0.8940    0.9125    0.9032       971
+          时政     0.8159    0.8676    0.8410       710
+          社会     0.7603    0.7957    0.7776       558
+          教育     0.8986    0.8571    0.8774       455
+          财经     0.7404    0.5495    0.6308       384
+          家居     0.7324    0.8048    0.7669       374
+          游戏     0.7878    0.6918    0.7366       279
+          房产     0.8281    0.7294    0.7756       218
+          时尚     0.6233    0.6149    0.6190       148
+          彩票     0.8070    0.5750    0.6715        80
+          星座     0.0000    0.0000    0.0000        41
+
+    accuracy                         0.8641      9000
+   macro avg     0.7584    0.7279    0.7400      9000
+weighted avg     0.8592    0.8641    0.8604      9000
+
+2022-05-22 00:54:03,690 INFO: | epoch   5 | dev | score (80.73, 70.65, 71.72) | f1 71.72 | time 55.12
+2022-05-22 00:54:03,694 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.8788    0.9255    0.9016       188
+          股票     0.8974    0.9409    0.9186       186
+          体育     0.9497    0.9679    0.9587       156
+          娱乐     0.9082    0.8318    0.8683       107
+          时政     0.8118    0.8846    0.8466        78
+          社会     0.7385    0.7869    0.7619        61
+          教育     0.8269    0.8600    0.8431        50
+          财经     0.7647    0.6190    0.6842        42
+          家居     0.7143    0.7317    0.7229        41
+          游戏     1.0000    0.6129    0.7600        31
+          房产     0.6452    0.8333    0.7273        24
+          时尚     0.5000    0.5625    0.5294        16
+          彩票     0.6667    0.2500    0.3636         8
+          星座     1.0000    0.0833    0.1538        12
+
+    accuracy                         0.8560      1000
+   macro avg     0.8073    0.7065    0.7172      1000
+weighted avg     0.8604    0.8560    0.8501      1000
+
+2022-05-22 00:54:03,694 INFO: Exceed history dev = 67.52, current dev = 71.72
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 00:58:16,814 INFO: | epoch   6 | step 3015 | batch 200/563 | lr 0.00008 | loss 0.3583 | s/batch 1.27
+2022-05-22 01:02:43,339 INFO: | epoch   6 | step 3215 | batch 400/563 | lr 0.00008 | loss 0.3769 | s/batch 1.33
+2022-05-22 01:06:17,902 INFO: | epoch   6 | score (84.24, 77.93, 79.54) | f1 79.54 | loss 0.3653 | time 734.18
+2022-05-22 01:06:17,918 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9076    0.9204    0.9140      1697
+          股票     0.8992    0.9190    0.9090      1680
+          体育     0.9716    0.9744    0.9730      1405
+          娱乐     0.8972    0.9166    0.9068       971
+          时政     0.8462    0.8831    0.8642       710
+          社会     0.7979    0.8351    0.8161       558
+          教育     0.9256    0.8747    0.8994       455
+          财经     0.7583    0.6536    0.7021       384
+          家居     0.7808    0.8476    0.8128       374
+          游戏     0.8471    0.7348    0.7869       279
+          房产     0.8821    0.7890    0.8329       218
+          时尚     0.6709    0.7162    0.6928       148
+          彩票     0.8308    0.6750    0.7448        80
+          星座     0.7778    0.1707    0.2800        41
+
+    accuracy                         0.8853      9000
+   macro avg     0.8424    0.7793    0.7954      9000
+weighted avg     0.8849    0.8853    0.8836      9000
+
+2022-05-22 01:07:16,754 INFO: | epoch   6 | dev | score (82.63, 71.05, 72.63) | f1 72.63 | time 58.83
+2022-05-22 01:07:16,758 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.8866    0.9149    0.9005       188
+          股票     0.8510    0.9516    0.8985       186
+          体育     0.9494    0.9615    0.9554       156
+          娱乐     0.8598    0.8598    0.8598       107
+          时政     0.8333    0.8333    0.8333        78
+          社会     0.6892    0.8361    0.7556        61
+          教育     0.7843    0.8000    0.7921        50
+          财经     0.8696    0.4762    0.6154        42
+          家居     0.9167    0.8049    0.8571        41
+          游戏     0.9048    0.6129    0.7308        31
+          房产     0.7778    0.8750    0.8235        24
+          时尚     0.5789    0.6875    0.6286        16
+          彩票     0.6667    0.2500    0.3636         8
+          星座     1.0000    0.0833    0.1538        12
+
+    accuracy                         0.8540      1000
+   macro avg     0.8263    0.7105    0.7263      1000
+weighted avg     0.8587    0.8540    0.8464      1000
+
+2022-05-22 01:07:16,758 INFO: Exceed history dev = 71.72, current dev = 72.63
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 01:13:00,688 INFO: | epoch   7 | step 3578 | batch 200/563 | lr 0.00008 | loss 0.3145 | s/batch 1.72
+2022-05-22 01:19:16,011 INFO: | epoch   7 | step 3778 | batch 400/563 | lr 0.00008 | loss 0.3480 | s/batch 1.88
+2022-05-22 01:24:21,995 INFO: | epoch   7 | score (85.22, 80.13, 81.66) | f1 81.66 | loss 0.3275 | time 1025.20
+2022-05-22 01:24:22,018 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9183    0.9275    0.9229      1697
+          股票     0.9064    0.9339    0.9200      1680
+          体育     0.9738    0.9794    0.9766      1405
+          娱乐     0.9237    0.9228    0.9232       971
+          时政     0.8693    0.8901    0.8796       710
+          社会     0.7895    0.8333    0.8108       558
+          教育     0.9252    0.8967    0.9107       455
+          财经     0.8160    0.6927    0.7493       384
+          家居     0.8201    0.8529    0.8362       374
+          游戏     0.8594    0.7885    0.8224       279
+          房产     0.8725    0.8165    0.8436       218
+          时尚     0.7055    0.7770    0.7395       148
+          彩票     0.8594    0.6875    0.7639        80
+          星座     0.6923    0.2195    0.3333        41
+
+    accuracy                         0.8980      9000
+   macro avg     0.8522    0.8013    0.8166      9000
+weighted avg     0.8974    0.8980    0.8966      9000
+
+2022-05-22 01:25:44,755 INFO: | epoch   7 | dev | score (79.93, 76.0, 76.66) | f1 76.66 | time 82.73
+2022-05-22 01:25:44,761 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.8918    0.9202    0.9058       188
+          股票     0.9037    0.9086    0.9062       186
+          体育     0.9548    0.9487    0.9518       156
+          娱乐     0.8952    0.8785    0.8868       107
+          时政     0.8023    0.8846    0.8415        78
+          社会     0.8197    0.8197    0.8197        61
+          教育     0.8269    0.8600    0.8431        50
+          财经     0.7045    0.7381    0.7209        42
+          家居     0.8684    0.8049    0.8354        41
+          游戏     0.9167    0.7097    0.8000        31
+          房产     0.8077    0.8750    0.8400        24
+          时尚     0.6316    0.7500    0.6857        16
+          彩票     0.5000    0.3750    0.4286         8
+          星座     0.6667    0.1667    0.2667        12
+
+    accuracy                         0.8700      1000
+   macro avg     0.7993    0.7600    0.7666      1000
+weighted avg     0.8695    0.8700    0.8671      1000
+
+2022-05-22 01:25:44,761 INFO: Exceed history dev = 72.63, current dev = 76.66
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 08:13:43,781 INFO: | epoch   8 | step 4141 | batch 200/563 | lr 0.00006 | loss 0.3171 | s/batch 122.39
+ 2022-05-22 08:19:29,644 INFO: | epoch   8 | step 4341 | batch 400/563 | lr 0.00006 | loss 0.2907 | s/batch 1.73
+2022-05-22 08:24:10,078 INFO: | epoch   8 | score (87.58, 82.92, 84.61) | f1 84.61 | loss 0.2883 | time 25105.27
+2022-05-22 08:24:10,101 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9275    0.9352    0.9313      1697
+          股票     0.9172    0.9298    0.9234      1680
+          体育     0.9733    0.9858    0.9795      1405
+          娱乐     0.9322    0.9341    0.9331       971
+          时政     0.8707    0.9014    0.8858       710
+          社会     0.8159    0.8656    0.8400       558
+          教育     0.9312    0.8923    0.9113       455
+          财经     0.7943    0.7240    0.7575       384
+          家居     0.8668    0.8877    0.8771       374
+          游戏     0.9000    0.8065    0.8507       279
+          房产     0.9350    0.8578    0.8947       218
+          时尚     0.7375    0.7973    0.7662       148
+          彩票     0.9231    0.7500    0.8276        80
+          星座     0.7368    0.3415    0.4667        41
+
+    accuracy                         0.9093      9000
+   macro avg     0.8758    0.8292    0.8461      9000
+weighted avg     0.9091    0.9093    0.9085      9000
+
+2022-05-22 08:56:48,933 INFO: | epoch   8 | dev | score (83.91, 76.46, 79.04) | f1 79.04 | time 1958.83
+2022-05-22 08:56:48,939 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.8838    0.9309    0.9067       188
+          股票     0.8821    0.9247    0.9029       186
+          体育     0.9615    0.9615    0.9615       156
+          娱乐     0.8584    0.9065    0.8818       107
+          时政     0.8049    0.8462    0.8250        78
+          社会     0.7833    0.7705    0.7769        61
+          教育     0.8936    0.8400    0.8660        50
+          财经     0.7778    0.6667    0.7179        42
+          家居     0.9143    0.7805    0.8421        41
+          游戏     0.9259    0.8065    0.8621        31
+          房产     0.7857    0.9167    0.8462        24
+          时尚     0.6923    0.5625    0.6207        16
+          彩票     0.7500    0.3750    0.5000         8
+          星座     0.8333    0.4167    0.5556        12
+
+    accuracy                         0.8730      1000
+   macro avg     0.8391    0.7646    0.7904      1000
+weighted avg     0.8721    0.8730    0.8701      1000
+
+2022-05-22 08:56:48,939 INFO: Exceed history dev = 76.66, current dev = 79.04
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 09:03:01,777 INFO: | epoch   9 | step 4704 | batch 200/563 | lr 0.00006 | loss 0.2587 | s/batch 1.86
+2022-05-22 09:14:44,233 INFO: | epoch   9 | step 4904 | batch 400/563 | lr 0.00006 | loss 0.2886 | s/batch 3.51
+2022-05-22 09:20:45,582 INFO: | epoch   9 | score (88.7, 84.7, 86.19) | f1 86.19 | loss 0.2648 | time 1436.61
+2022-05-22 09:20:45,604 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9317    0.9411    0.9364      1697
+          股票     0.9285    0.9435    0.9359      1680
+          体育     0.9726    0.9836    0.9781      1405
+          娱乐     0.9421    0.9392    0.9407       971
+          时政     0.8887    0.9000    0.8943       710
+          社会     0.8333    0.8692    0.8509       558
+          教育     0.9487    0.8945    0.9208       455
+          财经     0.8329    0.7656    0.7978       384
+          家居     0.8773    0.8984    0.8877       374
+          游戏     0.8806    0.8459    0.8629       279
+          房产     0.9375    0.8945    0.9155       218
+          时尚     0.7562    0.8176    0.7857       148
+          彩票     0.9254    0.7750    0.8435        80
+          星座     0.7619    0.3902    0.5161        41
+
+    accuracy                         0.9186      9000
+   macro avg     0.8870    0.8470    0.8619      9000
+weighted avg     0.9184    0.9186    0.9179      9000
+
+2022-05-22 09:22:16,646 INFO: | epoch   9 | dev | score (82.72, 78.5, 79.98) | f1 79.98 | time 91.04
+2022-05-22 09:22:16,652 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9077    0.9415    0.9243       188
+          股票     0.9043    0.9140    0.9091       186
+          体育     0.9554    0.9615    0.9585       156
+          娱乐     0.8649    0.8972    0.8807       107
+          时政     0.8313    0.8846    0.8571        78
+          社会     0.7692    0.8197    0.7937        61
+          教育     0.9091    0.8000    0.8511        50
+          财经     0.7632    0.6905    0.7250        42
+          家居     0.9706    0.8049    0.8800        41
+          游戏     0.9286    0.8387    0.8814        31
+          房产     0.8519    0.9583    0.9020        24
+          时尚     0.6111    0.6875    0.6471        16
+          彩票     0.6000    0.3750    0.4615         8
+          星座     0.7143    0.4167    0.5263        12
+
+    accuracy                         0.8820      1000
+   macro avg     0.8272    0.7850    0.7998      1000
+weighted avg     0.8819    0.8820    0.8803      1000
+
+2022-05-22 09:22:16,652 INFO: Exceed history dev = 79.04, current dev = 79.98
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 09:28:03,785 INFO: | epoch  10 | step 5267 | batch 200/563 | lr 0.00005 | loss 0.2426 | s/batch 1.74
+2022-05-22 09:34:49,187 INFO: | epoch  10 | step 5467 | batch 400/563 | lr 0.00005 | loss 0.2376 | s/batch 2.03
+2022-05-22 09:40:06,116 INFO: | epoch  10 | score (89.3, 86.89, 87.88) | f1 87.88 | loss 0.2416 | time 1069.42
+2022-05-22 09:40:06,140 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9429    0.9440    0.9435      1697
+          股票     0.9335    0.9435    0.9384      1680
+          体育     0.9780    0.9829    0.9805      1405
+          娱乐     0.9395    0.9434    0.9414       971
+          时政     0.8947    0.9099    0.9022       710
+          社会     0.8520    0.8871    0.8692       558
+          教育     0.9457    0.9187    0.9320       455
+          财经     0.8455    0.7839    0.8135       384
+          家居     0.8830    0.8877    0.8853       374
+          游戏     0.9202    0.8674    0.8930       279
+          房产     0.9343    0.9128    0.9234       218
+          时尚     0.7744    0.8581    0.8141       148
+          彩票     0.9437    0.8375    0.8874        80
+          星座     0.7143    0.4878    0.5797        41
+
+    accuracy                         0.9257      9000
+   macro avg     0.8930    0.8689    0.8788      9000
+weighted avg     0.9256    0.9257    0.9254      9000
+
+2022-05-22 09:41:37,451 INFO: | epoch  10 | dev | score (85.35, 80.6, 82.01) | f1 82.01 | time 91.30
+2022-05-22 09:41:37,457 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9031    0.9415    0.9219       188
+          股票     0.9091    0.9140    0.9115       186
+          体育     0.9500    0.9744    0.9620       156
+          娱乐     0.9216    0.8785    0.8995       107
+          时政     0.8625    0.8846    0.8734        78
+          社会     0.7761    0.8525    0.8125        61
+          教育     0.8980    0.8800    0.8889        50
+          财经     0.7632    0.6905    0.7250        42
+          家居     0.9429    0.8049    0.8684        41
+          游戏     0.9286    0.8387    0.8814        31
+          房产     0.9231    1.0000    0.9600        24
+          时尚     0.5714    0.7500    0.6486        16
+          彩票     0.6000    0.3750    0.4615         8
+          星座     1.0000    0.5000    0.6667        12
+
+    accuracy                         0.8910      1000
+   macro avg     0.8535    0.8060    0.8201      1000
+weighted avg     0.8928    0.8910    0.8898      1000
+
+2022-05-22 09:41:37,457 INFO: Exceed history dev = 79.98, current dev = 82.01
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 09:48:04,507 INFO: | epoch  11 | step 5830 | batch 200/563 | lr 0.00005 | loss 0.2379 | s/batch 1.94
+2022-05-22 09:54:25,128 INFO: | epoch  11 | step 6030 | batch 400/563 | lr 0.00004 | loss 0.2179 | s/batch 1.90
+2022-05-22 09:59:37,679 INFO: | epoch  11 | score (90.08, 86.61, 87.85) | f1 87.85 | loss 0.2288 | time 1080.18
+2022-05-22 09:59:37,699 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9398    0.9481    0.9440      1697
+          股票     0.9362    0.9524    0.9442      1680
+          体育     0.9780    0.9829    0.9805      1405
+          娱乐     0.9505    0.9485    0.9495       971
+          时政     0.8957    0.9197    0.9076       710
+          社会     0.8500    0.8835    0.8664       558
+          教育     0.9477    0.9165    0.9318       455
+          财经     0.8750    0.7656    0.8167       384
+          家居     0.9016    0.9064    0.9040       374
+          游戏     0.9154    0.8530    0.8831       279
+          房产     0.9502    0.9633    0.9567       218
+          时尚     0.7791    0.8581    0.8167       148
+          彩票     0.9306    0.8375    0.8816        80
+          星座     0.7619    0.3902    0.5161        41
+
+    accuracy                         0.9294      9000
+   macro avg     0.9008    0.8661    0.8785      9000
+weighted avg     0.9292    0.9294    0.9288      9000
+
+2022-05-22 10:01:07,071 INFO: | epoch  11 | dev | score (84.8, 79.79, 81.68) | f1 81.68 | time 89.36
+2022-05-22 10:01:07,078 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.8929    0.9309    0.9115       188
+          股票     0.8964    0.9301    0.9129       186
+          体育     0.9613    0.9551    0.9582       156
+          娱乐     0.8962    0.8879    0.8920       107
+          时政     0.8500    0.8718    0.8608        78
+          社会     0.7429    0.8525    0.7939        61
+          教育     0.8776    0.8600    0.8687        50
+          财经     0.8108    0.7143    0.7595        42
+          家居     0.9412    0.7805    0.8533        41
+          游戏     0.9583    0.7419    0.8364        31
+          房产     0.9231    1.0000    0.9600        24
+          时尚     0.6471    0.6875    0.6667        16
+          彩票     0.6000    0.3750    0.4615         8
+          星座     0.8750    0.5833    0.7000        12
+
+    accuracy                         0.8850      1000
+   macro avg     0.8480    0.7979    0.8168      1000
+weighted avg     0.8861    0.8850    0.8837      1000
+
+	C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 10:07:42,143 INFO: | epoch  12 | step 6393 | batch 200/563 | lr 0.00004 | loss 0.2116 | s/batch 1.98
+2022-05-22 10:14:14,621 INFO: | epoch  12 | step 6593 | batch 400/563 | lr 0.00004 | loss 0.2101 | s/batch 1.96
+2022-05-22 10:18:18,877 INFO: | epoch  12 | score (90.26, 88.51, 89.29) | f1 89.29 | loss 0.2079 | time 1031.79
+2022-05-22 10:18:18,892 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9424    0.9552    0.9488      1697
+          股票     0.9450    0.9518    0.9484      1680
+          体育     0.9837    0.9879    0.9858      1405
+          娱乐     0.9596    0.9547    0.9572       971
+          时政     0.9078    0.9155    0.9116       710
+          社会     0.8613    0.9014    0.8809       558
+          教育     0.9429    0.9077    0.9250       455
+          财经     0.8625    0.7839    0.8213       384
+          家居     0.9096    0.9144    0.9120       374
+          游戏     0.9167    0.8674    0.8913       279
+          房产     0.9452    0.9495    0.9474       218
+          时尚     0.8176    0.8784    0.8469       148
+          彩票     0.9452    0.8625    0.9020        80
+          星座     0.6970    0.5610    0.6216        41
+
+    accuracy                         0.9350      9000
+   macro avg     0.9026    0.8851    0.8929      9000
+weighted avg     0.9348    0.9350    0.9347      9000
+
+2022-05-22 10:19:20,500 INFO: | epoch  12 | dev | score (84.67, 81.08, 81.97) | f1 81.97 | time 61.60
+2022-05-22 10:19:20,504 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.8995    0.9521    0.9251       188
+          股票     0.9441    0.9086    0.9260       186
+          体育     0.9557    0.9679    0.9618       156
+          娱乐     0.9223    0.8879    0.9048       107
+          时政     0.8333    0.8974    0.8642        78
+          社会     0.8125    0.8525    0.8320        61
+          教育     0.8800    0.8800    0.8800        50
+          财经     0.7805    0.7619    0.7711        42
+          家居     0.9143    0.7805    0.8421        41
+          游戏     0.9231    0.7742    0.8421        31
+          房产     0.9231    1.0000    0.9600        24
+          时尚     0.5652    0.8125    0.6667        16
+          彩票     0.7500    0.3750    0.5000         8
+          星座     0.7500    0.5000    0.6000        12
+
+    accuracy                         0.8940      1000
+   macro avg     0.8467    0.8108    0.8197      1000
+weighted avg     0.8961    0.8940    0.8931      1000
+
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 10:24:16,989 INFO: | epoch  13 | step 6956 | batch 200/563 | lr 0.00004 | loss 0.2053 | s/batch 1.48
+2022-05-22 10:28:36,078 INFO: | epoch  13 | step 7156 | batch 400/563 | lr 0.00003 | loss 0.1854 | s/batch 1.30
+2022-05-22 10:32:02,551 INFO: | epoch  13 | score (92.14, 89.66, 90.71) | f1 90.71 | loss 0.1943 | time 762.03
+2022-05-22 10:32:02,568 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9519    0.9558    0.9538      1697
+          股票     0.9449    0.9595    0.9522      1680
+          体育     0.9816    0.9879    0.9847      1405
+          娱乐     0.9527    0.9537    0.9532       971
+          时政     0.9170    0.9183    0.9177       710
+          社会     0.8639    0.9104    0.8866       558
+          教育     0.9634    0.9253    0.9439       455
+          财经     0.8994    0.8151    0.8552       384
+          家居     0.9158    0.9305    0.9231       374
+          游戏     0.9423    0.8781    0.9091       279
+          房产     0.9676    0.9587    0.9631       218
+          时尚     0.8210    0.8986    0.8581       148
+          彩票     0.9444    0.8500    0.8947        80
+          星座     0.8333    0.6098    0.7042        41
+
+    accuracy                         0.9411      9000
+   macro avg     0.9214    0.8966    0.9071      9000
+weighted avg     0.9413    0.9411    0.9409      9000
+
+2022-05-22 10:32:58,788 INFO: | epoch  13 | dev | score (85.11, 81.61, 82.96) | f1 82.96 | time 56.21
+2022-05-22 10:32:58,792 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9026    0.9362    0.9191       188
+          股票     0.9189    0.9140    0.9164       186
+          体育     0.9613    0.9551    0.9582       156
+          娱乐     0.9135    0.8879    0.9005       107
+          时政     0.8256    0.9103    0.8659        78
+          社会     0.7647    0.8525    0.8062        61
+          教育     0.8800    0.8800    0.8800        50
+          财经     0.7750    0.7381    0.7561        42
+          家居     0.9706    0.8049    0.8800        41
+          游戏     0.9630    0.8387    0.8966        31
+          房产     0.9600    1.0000    0.9796        24
+          时尚     0.7059    0.7500    0.7273        16
+          彩票     0.5000    0.3750    0.4286         8
+          星座     0.8750    0.5833    0.7000        12
+
+    accuracy                         0.8930      1000
+   macro avg     0.8511    0.8161    0.8296      1000
+weighted avg     0.8944    0.8930    0.8924      1000
+
+2022-05-22 10:32:58,792 INFO: Exceed history dev = 82.01, current dev = 82.96
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 10:37:16,915 INFO: | epoch  14 | step 7519 | batch 200/563 | lr 0.00003 | loss 0.1743 | s/batch 1.29
+2022-05-22 10:41:33,814 INFO: | epoch  14 | step 7719 | batch 400/563 | lr 0.00003 | loss 0.1810 | s/batch 1.28
+2022-05-22 10:45:13,903 INFO: | epoch  14 | score (92.32, 90.38, 91.24) | f1 91.24 | loss 0.1827 | time 735.08
+2022-05-22 10:45:13,918 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9559    0.9570    0.9564      1697
+          股票     0.9534    0.9631    0.9582      1680
+          体育     0.9872    0.9865    0.9868      1405
+          娱乐     0.9609    0.9609    0.9609       971
+          时政     0.9034    0.9225    0.9129       710
+          社会     0.8682    0.9086    0.8879       558
+          教育     0.9615    0.9341    0.9476       455
+          财经     0.9025    0.8438    0.8721       384
+          家居     0.9156    0.9278    0.9216       374
+          游戏     0.9240    0.8710    0.8967       279
+          房产     0.9812    0.9587    0.9698       218
+          时尚     0.8471    0.8986    0.8721       148
+          彩票     0.9200    0.8625    0.8903        80
+          星座     0.8438    0.6585    0.7397        41
+
+    accuracy                         0.9444      9000
+   macro avg     0.9232    0.9038    0.9124      9000
+weighted avg     0.9446    0.9444    0.9443      9000
+
+2022-05-22 10:46:13,237 INFO: | epoch  14 | dev | score (84.74, 80.69, 82.3) | f1 82.3 | time 59.31
+2022-05-22 10:46:13,241 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9115    0.9309    0.9211       188
+          股票     0.8958    0.9247    0.9101       186
+          体育     0.9554    0.9615    0.9585       156
+          娱乐     0.8889    0.8972    0.8930       107
+          时政     0.8452    0.9103    0.8765        78
+          社会     0.8387    0.8525    0.8455        61
+          教育     0.8800    0.8800    0.8800        50
+          财经     0.7692    0.7143    0.7407        42
+          家居     0.9706    0.8049    0.8800        41
+          游戏     0.9231    0.7742    0.8421        31
+          房产     0.9600    1.0000    0.9796        24
+          时尚     0.6471    0.6875    0.6667        16
+          彩票     0.6000    0.3750    0.4615         8
+          星座     0.7778    0.5833    0.6667        12
+
+    accuracy                         0.8920      1000
+   macro avg     0.8474    0.8069    0.8230      1000
+weighted avg     0.8915    0.8920    0.8906      1000
+
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 10:51:06,846 INFO: | epoch  15 | step 8082 | batch 200/563 | lr 0.00002 | loss 0.1627 | s/batch 1.47
+2022-05-22 10:55:36,637 INFO: | epoch  15 | step 8282 | batch 400/563 | lr 0.00002 | loss 0.1792 | s/batch 1.35
+2022-05-22 10:59:15,530 INFO: | epoch  15 | score (92.03, 90.16, 90.97) | f1 90.97 | loss 0.1720 | time 782.28
+2022-05-22 10:59:15,549 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9559    0.9576    0.9567      1697
+          股票     0.9563    0.9637    0.9600      1680
+          体育     0.9837    0.9872    0.9854      1405
+          娱乐     0.9630    0.9640    0.9635       971
+          时政     0.9326    0.9352    0.9339       710
+          社会     0.8756    0.9211    0.8978       558
+          教育     0.9505    0.9275    0.9388       455
+          财经     0.8989    0.8568    0.8773       384
+          家居     0.9332    0.9332    0.9332       374
+          游戏     0.9401    0.8996    0.9194       279
+          房产     0.9769    0.9679    0.9724       218
+          时尚     0.8618    0.8851    0.8733       148
+          彩票     0.9221    0.8875    0.9045        80
+          星座     0.7333    0.5366    0.6197        41
+
+    accuracy                         0.9479      9000
+   macro avg     0.9203    0.9016    0.9097      9000
+weighted avg     0.9478    0.9479    0.9477      9000
+
+2022-05-22 11:00:18,036 INFO: | epoch  15 | dev | score (84.06, 80.57, 81.76) | f1 81.76 | time 62.48
+2022-05-22 11:00:18,040 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9162    0.9309    0.9235       188
+          股票     0.8838    0.9409    0.9115       186
+          体育     0.9613    0.9551    0.9582       156
+          娱乐     0.9065    0.9065    0.9065       107
+          时政     0.8519    0.8846    0.8679        78
+          社会     0.8154    0.8689    0.8413        61
+          教育     0.8750    0.8400    0.8571        50
+          财经     0.7838    0.6905    0.7342        42
+          家居     0.9697    0.7805    0.8649        41
+          游戏     0.9600    0.7742    0.8571        31
+          房产     0.9583    0.9583    0.9583        24
+          时尚     0.6364    0.8750    0.7368        16
+          彩票     0.5000    0.3750    0.4286         8
+          星座     0.7500    0.5000    0.6000        12
+
+    accuracy                         0.8910      1000
+   macro avg     0.8406    0.8057    0.8176      1000
+weighted avg     0.8922    0.8910    0.8898      1000
+
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 11:04:58,030 INFO: | epoch  16 | step 8645 | batch 200/563 | lr 0.00002 | loss 0.1660 | s/batch 1.40
+2022-05-22 11:09:26,369 INFO: | epoch  16 | step 8845 | batch 400/563 | lr 0.00002 | loss 0.1658 | s/batch 1.34
+2022-05-22 11:13:27,910 INFO: | epoch  16 | score (92.67, 91.09, 91.78) | f1 91.78 | loss 0.1694 | time 789.86
+2022-05-22 11:13:27,928 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9605    0.9605    0.9605      1697
+          股票     0.9527    0.9595    0.9561      1680
+          体育     0.9872    0.9865    0.9868      1405
+          娱乐     0.9641    0.9691    0.9666       971
+          时政     0.9170    0.9338    0.9253       710
+          社会     0.8866    0.9104    0.8983       558
+          教育     0.9530    0.9363    0.9446       455
+          财经     0.8895    0.8385    0.8633       384
+          家居     0.9310    0.9385    0.9348       374
+          游戏     0.9434    0.8961    0.9191       279
+          房产     0.9676    0.9587    0.9631       218
+          时尚     0.8553    0.9189    0.8860       148
+          彩票     0.9221    0.8875    0.9045        80
+          星座     0.8438    0.6585    0.7397        41
+
+    accuracy                         0.9480      9000
+   macro avg     0.9267    0.9109    0.9178      9000
+weighted avg     0.9480    0.9480    0.9479      9000
+
+2022-05-22 11:14:29,741 INFO: | epoch  16 | dev | score (88.15, 81.62, 83.76) | f1 83.76 | time 61.81
+2022-05-22 11:14:29,744 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9124    0.9415    0.9267       188
+          股票     0.9115    0.9409    0.9259       186
+          体育     0.9618    0.9679    0.9649       156
+          娱乐     0.8991    0.9159    0.9074       107
+          时政     0.8372    0.9231    0.8780        78
+          社会     0.8030    0.8689    0.8346        61
+          教育     0.8723    0.8200    0.8454        50
+          财经     0.8529    0.6905    0.7632        42
+          家居     0.9697    0.7805    0.8649        41
+          游戏     0.9615    0.8065    0.8772        31
+          房产     0.9600    1.0000    0.9796        24
+          时尚     0.6500    0.8125    0.7222        16
+          彩票     0.7500    0.3750    0.5000         8
+          星座     1.0000    0.5833    0.7368        12
+
+    accuracy                         0.9000      1000
+   macro avg     0.8815    0.8162    0.8376      1000
+weighted avg     0.9020    0.9000    0.8983      1000
+
+2022-05-22 11:14:29,744 INFO: Exceed history dev = 82.96, current dev = 83.76
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 11:18:59,784 INFO: | epoch  17 | step 9208 | batch 200/563 | lr 0.00002 | loss 0.1669 | s/batch 1.35
+2022-05-22 11:23:35,046 INFO: | epoch  17 | step 9408 | batch 400/563 | lr 0.00002 | loss 0.1501 | s/batch 1.38
+2022-05-22 11:27:14,207 INFO: | epoch  17 | score (92.88, 91.81, 92.29) | f1 92.29 | loss 0.1590 | time 764.43
+2022-05-22 11:27:14,223 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9624    0.9652    0.9638      1697
+          股票     0.9591    0.9625    0.9608      1680
+          体育     0.9858    0.9900    0.9879      1405
+          娱乐     0.9732    0.9712    0.9722       971
+          时政     0.9261    0.9352    0.9306       710
+          社会     0.8972    0.9229    0.9099       558
+          教育     0.9598    0.9451    0.9524       455
+          财经     0.8847    0.8594    0.8719       384
+          家居     0.9278    0.9278    0.9278       374
+          游戏     0.9545    0.9032    0.9282       279
+          房产     0.9952    0.9495    0.9718       218
+          时尚     0.8509    0.9257    0.8867       148
+          彩票     0.9481    0.9125    0.9299        80
+          星座     0.7778    0.6829    0.7273        41
+
+    accuracy                         0.9524      9000
+   macro avg     0.9288    0.9181    0.9229      9000
+weighted avg     0.9526    0.9524    0.9524      9000
+
+2022-05-22 11:28:15,616 INFO: | epoch  17 | dev | score (83.86, 81.18, 82.13) | f1 82.13 | time 61.39
+2022-05-22 11:28:15,619 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9077    0.9415    0.9243       188
+          股票     0.9058    0.9301    0.9178       186
+          体育     0.9673    0.9487    0.9579       156
+          娱乐     0.9038    0.8785    0.8910       107
+          时政     0.8333    0.8974    0.8642        78
+          社会     0.7794    0.8689    0.8217        61
+          教育     0.8776    0.8600    0.8687        50
+          财经     0.7895    0.7143    0.7500        42
+          家居     1.0000    0.7805    0.8767        41
+          游戏     0.9600    0.7742    0.8571        31
+          房产     0.9600    1.0000    0.9796        24
+          时尚     0.6500    0.8125    0.7222        16
+          彩票     0.4286    0.3750    0.4000         8
+          星座     0.7778    0.5833    0.6667        12
+
+    accuracy                         0.8910      1000
+   macro avg     0.8386    0.8118    0.8213      1000
+weighted avg     0.8933    0.8910    0.8905      1000
+
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 11:32:55,320 INFO: | epoch  18 | step 9771 | batch 200/563 | lr 0.00002 | loss 0.1510 | s/batch 1.40
+2022-05-22 11:37:41,685 INFO: | epoch  18 | step 9971 | batch 400/563 | lr 0.00002 | loss 0.1593 | s/batch 1.43
+2022-05-22 11:41:00,874 INFO: | epoch  18 | score (93.33, 91.62, 92.37) | f1 92.37 | loss 0.1575 | time 765.24
+2022-05-22 11:41:00,891 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9584    0.9629    0.9606      1697
+          股票     0.9608    0.9631    0.9620      1680
+          体育     0.9886    0.9886    0.9886      1405
+          娱乐     0.9680    0.9670    0.9675       971
+          时政     0.9220    0.9324    0.9272       710
+          社会     0.8960    0.9265    0.9110       558
+          教育     0.9575    0.9407    0.9490       455
+          财经     0.8960    0.8750    0.8854       384
+          家居     0.9355    0.9305    0.9330       374
+          游戏     0.9470    0.8961    0.9208       279
+          房产     0.9724    0.9679    0.9701       218
+          时尚     0.8428    0.9054    0.8730       148
+          彩票     0.9467    0.8875    0.9161        80
+          星座     0.8750    0.6829    0.7671        41
+
+    accuracy                         0.9517      9000
+   macro avg     0.9333    0.9162    0.9237      9000
+weighted avg     0.9518    0.9517    0.9516      9000
+
+2022-05-22 11:41:59,075 INFO: | epoch  18 | dev | score (84.85, 81.42, 82.74) | f1 82.74 | time 58.18
+2022-05-22 11:41:59,080 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9077    0.9415    0.9243       188
+          股票     0.9010    0.9301    0.9153       186
+          体育     0.9613    0.9551    0.9582       156
+          娱乐     0.9065    0.9065    0.9065       107
+          时政     0.8293    0.8718    0.8500        78
+          社会     0.8030    0.8689    0.8346        61
+          教育     0.8776    0.8600    0.8687        50
+          财经     0.8108    0.7143    0.7595        42
+          家居     1.0000    0.8049    0.8919        41
+          游戏     0.9600    0.7742    0.8571        31
+          房产     0.9600    1.0000    0.9796        24
+          时尚     0.6842    0.8125    0.7429        16
+          彩票     0.5000    0.3750    0.4286         8
+          星座     0.7778    0.5833    0.6667        12
+
+    accuracy                         0.8940      1000
+   macro avg     0.8485    0.8142    0.8274      1000
+weighted avg     0.8949    0.8940    0.8930      1000
+
+C:\Users\Lenovo\.conda\envs\ObjectDetection\lib\site-packages\torch\optim\lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+2022-05-22 11:46:27,863 INFO: | epoch  19 | step 10334 | batch 200/563 | lr 0.00001 | loss 0.1515 | s/batch 1.34
+2022-05-22 11:51:09,265 INFO: | epoch  19 | step 10534 | batch 400/563 | lr 0.00001 | loss 0.1551 | s/batch 1.41
+2022-05-22 11:54:59,659 INFO: | epoch  19 | score (92.86, 91.57, 92.17) | f1 92.17 | loss 0.1556 | time 780.57
+2022-05-22 11:54:59,678 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9628    0.9605    0.9617      1697
+          股票     0.9594    0.9708    0.9651      1680
+          体育     0.9872    0.9893    0.9883      1405
+          娱乐     0.9602    0.9691    0.9646       971
+          时政     0.9269    0.9282    0.9275       710
+          社会     0.8927    0.9247    0.9085       558
+          教育     0.9682    0.9363    0.9520       455
+          财经     0.9101    0.8698    0.8895       384
+          家居     0.9239    0.9412    0.9325       374
+          游戏     0.9425    0.8817    0.9111       279
+          房产     0.9811    0.9541    0.9674       218
+          时尚     0.8471    0.8986    0.8721       148
+          彩票     0.9605    0.9125    0.9359        80
+          星座     0.7778    0.6829    0.7273        41
+
+    accuracy                         0.9519      9000
+   macro avg     0.9286    0.9157    0.9217      9000
+weighted avg     0.9520    0.9519    0.9518      9000
+
+2022-05-22 11:56:03,661 INFO: | epoch  19 | dev | score (84.79, 81.62, 82.78) | f1 82.78 | time 63.98
+2022-05-22 11:56:03,665 INFO: 
+              precision    recall  f1-score   support
+
+          科技     0.9077    0.9415    0.9243       188
+          股票     0.9101    0.9247    0.9173       186
+          体育     0.9613    0.9551    0.9582       156
+          娱乐     0.8981    0.9065    0.9023       107
+          时政     0.8353    0.9103    0.8712        78
+          社会     0.8413    0.8689    0.8548        61
+          教育     0.8800    0.8800    0.8800        50
+          财经     0.7895    0.7143    0.7500        42
+          家居     1.0000    0.7805    0.8767        41
+          游戏     0.9600    0.7742    0.8571        31
+          房产     0.9600    1.0000    0.9796        24
+          时尚     0.6500    0.8125    0.7222        16
+          彩票     0.5000    0.3750    0.4286         8
+          星座     0.7778    0.5833    0.6667        12
+
+    accuracy                         0.8960      1000
+   macro avg     0.8479    0.8162    0.8278      1000
+weighted avg     0.8971    0.8960    0.8950      1000
+
+2022-05-22 11:56:03,665 INFO: Eearly stop in epoch 16, best train: 91.78, dev: 83.76
